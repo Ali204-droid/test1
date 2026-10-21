@@ -222,44 +222,6 @@ section { padding: 110px 5%; }
 .author-name { font-size: 0.88rem; font-weight: 500; color: #fff; }
 .author-service { font-size: 0.72rem; color: rgba(255,255,255,0.62); letter-spacing: 0.08em; margin-top: 0.1rem; }
 
-/* ── BOOKING FORM ── */
-#book { background: var(--off-white); position: relative; overflow: hidden; }
-#book::after { content: ''; position: absolute; top: -20%; right: -8%; width: 40%; height: 120%; border-radius: 60% 0 0 60%; background: #f5eeff; z-index: 0; pointer-events: none; opacity: 0.65; }
-.booking-inner { position: relative; z-index: 1; display: grid; grid-template-columns: 1fr 1fr; gap: 6rem; align-items: start; }
-.booking-info .section-title { margin-bottom: 1rem; }
-.booking-info > p { font-size: 0.95rem; line-height: 1.9; color: var(--ink-light); font-weight: 300; margin-bottom: 2rem; }
-.booking-perks { list-style: none; display: flex; flex-direction: column; gap: 0.9rem; }
-.booking-perks li { display: flex; align-items: center; gap: 0.8rem; font-size: 0.88rem; color: var(--ink-mid); }
-.booking-perks li::before { content: '✦'; color: var(--fuchsia); font-size: 0.7rem; }
-.booking-contact { margin-top: 2.5rem; display: flex; flex-direction: column; gap: 0.7rem; }
-.contact-row { display: flex; align-items: center; gap: 0.8rem; font-size: 0.88rem; color: var(--ink-mid); }
-.contact-row .icon { width: 36px; height: 36px; border-radius: 50%; background: #f5eeff; display: flex; align-items: center; justify-content: center; font-size: 0.9rem; flex-shrink: 0; }
-.booking-form { background: #fff; border-radius: 28px; padding: 2.8rem 2.5rem; box-shadow: 0 20px 60px rgba(124,58,237,0.09); border: 1px solid rgba(124,58,237,0.07); }
-.form-title { font-family: var(--font-display); font-size: 1.8rem; font-weight: 400; color: var(--ink); margin-bottom: 0.3rem; }
-.form-subtitle { font-size: 0.82rem; color: var(--ink-light); margin-bottom: 2rem; }
-.form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.2rem; }
-.form-group { display: flex; flex-direction: column; gap: 0.4rem; }
-.form-group.full { grid-column: 1 / -1; }
-.form-group label { font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-mid); font-weight: 500; }
-.form-group input, .form-group select, .form-group textarea { background: #f5eeff; border: 1.5px solid transparent; border-radius: 14px; padding: 0.85rem 1.1rem; font-family: var(--font-body); font-size: 0.88rem; color: var(--ink); outline: none; transition: border-color 0.25s, box-shadow 0.25s; width: 100%; }
-.form-group input:focus, .form-group select:focus, .form-group textarea:focus { border-color: var(--fuchsia); box-shadow: 0 0 0 3px rgba(233,30,140,0.09); }
-.form-group select { appearance: none; cursor: pointer; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23e91e8c' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 1.1rem center; padding-right: 2.5rem; }
-.form-group textarea { resize: vertical; min-height: 90px; }
-.form-group input::placeholder, .form-group textarea::placeholder { color: var(--violet-light); }
-.form-time-slots { grid-column: 1 / -1; }
-.time-slots-label { font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-mid); font-weight: 500; margin-bottom: 0.6rem; }
-.slots-wrap { display: flex; flex-wrap: wrap; gap: 0.5rem; }
-.time-slot { padding: 0.5rem 1rem; border-radius: 50px; border: 1.5px solid rgba(124,58,237,0.18); font-size: 0.78rem; color: var(--ink-mid); cursor: pointer; transition: all 0.2s; background: #f5eeff; font-family: var(--font-body); }
-.time-slot:hover, .time-slot.active { background: linear-gradient(135deg, var(--fuchsia), var(--violet)); color: #fff; border-color: transparent; }
-.form-submit { grid-column: 1 / -1; margin-top: 0.5rem; background: linear-gradient(135deg, var(--fuchsia), var(--violet)); color: #fff; border: none; padding: 1.05rem 2rem; border-radius: 50px; width: 100%; font-family: var(--font-body); font-size: 0.85rem; letter-spacing: 0.15em; text-transform: uppercase; font-weight: 500; cursor: pointer; transition: opacity 0.25s, transform 0.2s, box-shadow 0.25s; box-shadow: 0 8px 24px rgba(233,30,140,0.3); }
-.form-submit:hover { opacity: 0.88; transform: translateY(-2px); box-shadow: 0 14px 36px rgba(233,30,140,0.4); }
-.form-note { grid-column: 1/-1; font-size: 0.72rem; color: var(--ink-light); text-align: center; margin-top: 0.2rem; }
-.form-success { display: none; text-align: center; padding: 2rem 0; }
-.form-success.show { display: block; }
-.success-icon { font-size: 3rem; margin-bottom: 1rem; }
-.success-title { font-family: var(--font-display); font-size: 1.9rem; color: var(--ink); margin-bottom: 0.5rem; }
-.success-msg { font-size: 0.9rem; color: var(--ink-light); line-height: 1.8; }
-
 /* ── FOOTER ── */
 footer { background: linear-gradient(145deg, #1a0a3c 0%, #2d1060 100%); padding: 60px 5% 30px; text-align: center; }
 .footer-logo { font-family: var(--font-display); font-size: 2.1rem; font-weight: 400; color: #fff; letter-spacing: 0.06em; margin-bottom: 0.5rem; }
@@ -281,23 +243,15 @@ footer { background: linear-gradient(145deg, #1a0a3c 0%, #2d1060 100%); padding:
   #about { grid-template-columns: 1fr; gap: 3rem; }
   .about-visual { max-width: 340px; margin: 0 auto; }
   .testimonials-grid { grid-template-columns: 1fr; }
-  .booking-inner { grid-template-columns: 1fr; gap: 3.5rem; }
-  #book::after { display: none; }
 }
 @media (max-width: 768px) {
   .nav-links { display: none; }
   .hamburger { display: flex; }
   .services-grid { grid-template-columns: 1fr; }
-  .form-grid { grid-template-columns: 1fr; }
-  .form-group.full { grid-column: 1; }
-  .form-submit { grid-column: 1; }
-  .form-note { grid-column: 1; }
-  .form-time-slots { grid-column: 1; }
 }
 @media (max-width: 480px) {
   .hero-title { font-size: 3rem; }
   .hero-actions { max-width: 100%; }
-  .booking-form { padding: 2rem 1.5rem; }
 }
 </style>
 </head>
@@ -310,7 +264,7 @@ footer { background: linear-gradient(145deg, #1a0a3c 0%, #2d1060 100%); padding:
     <li><a href="#about">About</a></li>
     <li><a href="#services">Services</a></li>
     <li><a href="#testimonials">Reviews</a></li>
-    <li><a href="#book" class="nav-cta">Book Now</a></li>
+    <li><a href="https://wa.me/97142765877?text=Hi%20Feya%20Beauty%20Salon%2C%20I%27d%20like%20to%20book%20an%20appointment." target="_blank" rel="noopener" class="nav-cta">Book Now</a></li>
   </ul>
   <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
 </nav>
@@ -318,7 +272,7 @@ footer { background: linear-gradient(145deg, #1a0a3c 0%, #2d1060 100%); padding:
   <a href="#about" onclick="closeMobileMenu()">About</a>
   <a href="#services" onclick="closeMobileMenu()">Services</a>
   <a href="#testimonials" onclick="closeMobileMenu()">Reviews</a>
-  <a href="#book" onclick="closeMobileMenu()" style="color:var(--rose);">Book Appointment →</a>
+  <a href="https://wa.me/97142765877?text=Hi%20Feya%20Beauty%20Salon%2C%20I%27d%20like%20to%20book%20an%20appointment." target="_blank" rel="noopener" onclick="closeMobileMenu()" style="color:var(--rose);">Book Now →</a>
 </div>
 
 <!-- ═══ HERO ═══ -->
@@ -337,7 +291,7 @@ footer { background: linear-gradient(145deg, #1a0a3c 0%, #2d1060 100%); padding:
     <p class="hero-desc">Premium beauty services in the heart of Dubai. Experience luxury, hygiene, and perfection.</p>
 
     <div class="hero-actions">
-      <a href="#book" class="btn-hero">Book Appointment</a>
+      <a href="https://wa.me/97142765877?text=Hi%20Feya%20Beauty%20Salon%2C%20I%27d%20like%20to%20book%20an%20appointment." target="_blank" rel="noopener" class="btn-hero">Book Now</a>
       <a href="tel:+97142765877" class="btn-hero-ghost">
         <span class="call-icon">📞</span> Call Now
       </a>
@@ -431,101 +385,6 @@ footer { background: linear-gradient(145deg, #1a0a3c 0%, #2d1060 100%); padding:
   </div>
 </section>
 
-<!-- ═══ BOOKING FORM ═══ -->
-<section id="book">
-  <div class="booking-inner">
-    <div class="booking-info reveal">
-      <p class="section-eyebrow">Reserve Your Spot</p>
-      <h2 class="section-title">Book your<br><em>transformation</em></h2>
-      <p>Choose your service, pick a time that suits you, and leave the rest to us. We'll confirm your appointment within the hour and ensure your experience is nothing short of magical.</p>
-      <ul class="booking-perks">
-        <li>Complimentary consultation with every booking</li>
-        <li>Flexible rescheduling up to 24 hours prior</li>
-        <li>Premium products on every treatment</li>
-        <li>Dedicated stylist assigned just for you</li>
-      </ul>
-      <div class="booking-contact">
-        <div class="contact-row"><div class="icon">📞</div> +971 4 276 5877</div>
-        <div class="contact-row"><div class="icon">📍</div> Shop No. 12, Building R-25, France Cluster, International City, Dubai, UAE</div>
-      </div>
-    </div>
-
-    <div class="reveal">
-      <div class="booking-form" id="bookingFormWrap">
-        <div class="form-title">Book Appointment</div>
-        <div class="form-subtitle">Fill in your details and we'll confirm shortly.</div>
-        <div class="form-grid" id="formFields">
-          <div class="form-group">
-            <label>Your Name</label>
-            <input type="text" id="fname" placeholder="e.g. Ayesha Khan">
-          </div>
-          <div class="form-group">
-            <label>Phone Number</label>
-            <input type="tel" id="fphone" placeholder="+971 50 000 0000">
-          </div>
-          <div class="form-group">
-            <label>Email Address</label>
-            <input type="email" id="femail" placeholder="your@email.com">
-          </div>
-          <div class="form-group">
-            <label>Service</label>
-            <select id="fservice">
-              <option value="">Select a service…</option>
-              <option>Facial &amp; Skin Treatment</option>
-              <option>Hair Cut &amp; Styling</option>
-              <option>Hair Coloring</option>
-              <option>Manicure &amp; Pedicure</option>
-              <option>Nail Art</option>
-              <option>Bridal Package</option>
-              <option>Full Wellness Package</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label>Preferred Date</label>
-            <input type="date" id="fdate">
-          </div>
-          <div class="form-group">
-            <label>Stylist Preference</label>
-            <select id="fstylist">
-              <option value="">No preference</option>
-              <option>Hina (Bridal Specialist)</option>
-              <option>Sana (Hair Expert)</option>
-              <option>Nadia (Skin &amp; Facials)</option>
-              <option>Any Available</option>
-            </select>
-          </div>
-          <div class="form-time-slots full">
-            <div class="time-slots-label">Preferred Time Slot</div>
-            <div class="slots-wrap">
-              <button type="button" class="time-slot" onclick="selectSlot(this)">10:00 AM</button>
-              <button type="button" class="time-slot" onclick="selectSlot(this)">11:00 AM</button>
-              <button type="button" class="time-slot" onclick="selectSlot(this)">12:00 PM</button>
-              <button type="button" class="time-slot" onclick="selectSlot(this)">01:00 PM</button>
-              <button type="button" class="time-slot" onclick="selectSlot(this)">03:00 PM</button>
-              <button type="button" class="time-slot" onclick="selectSlot(this)">04:00 PM</button>
-              <button type="button" class="time-slot" onclick="selectSlot(this)">05:00 PM</button>
-              <button type="button" class="time-slot" onclick="selectSlot(this)">06:00 PM</button>
-            </div>
-          </div>
-          <div class="form-group full">
-            <label>Special Requests (optional)</label>
-            <textarea id="fnotes" placeholder="Any allergies, preferences, or special requests…"></textarea>
-          </div>
-          <button type="button" class="form-submit" onclick="submitForm()">Confirm Appointment →</button>
-          <p class="form-note">🔒 Your info is safe with us. We'll confirm via WhatsApp or call.</p>
-        </div>
-        <div class="form-success" id="formSuccess">
-          <div class="success-icon">🌸</div>
-          <div class="success-title">You're all set!</div>
-          <p class="success-msg">Thank you for booking with Feya. We'll confirm your appointment within the hour via WhatsApp or call. We can't wait to pamper you!</p>
-          <br>
-          <button onclick="resetForm()" class="btn-primary" style="margin-top:0.5rem;">Book Another</button>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
 <!-- FOOTER -->
 <footer>
   <div class="footer-logo">Feya<span>Beauty</span>Salon</div>
@@ -534,7 +393,7 @@ footer { background: linear-gradient(145deg, #1a0a3c 0%, #2d1060 100%); padding:
     <li><a href="#about">About</a></li>
     <li><a href="#services">Services</a></li>
     <li><a href="#testimonials">Reviews</a></li>
-    <li><a href="#book">Book</a></li>
+    <li><a href="https://wa.me/97142765877?text=Hi%20Feya%20Beauty%20Salon%2C%20I%27d%20like%20to%20book%20an%20appointment." target="_blank" rel="noopener">Book</a></li>
   </ul>
   <div class="footer-copy">© 2025 Feya Beauty Salon, International City, Dubai, UAE. All rights reserved.</div>
 </footer>
@@ -567,48 +426,6 @@ footer { background: linear-gradient(145deg, #1a0a3c 0%, #2d1060 100%); padding:
     }, { threshold: 0.1 });
     reveals.forEach(el => obs.observe(el));
   })() : reveals.forEach(el => el.classList.add('visible'));
-
-  // Time slots
-  function selectSlot(btn) {
-    document.querySelectorAll('.time-slot').forEach(s => s.classList.remove('active'));
-    btn.classList.add('active');
-  }
-
-  // Date min
-  const dateInput = document.getElementById('fdate');
-  if (dateInput) dateInput.min = new Date().toISOString().split('T')[0];
-
-  // Highlight required field
-  function highlightField(id) {
-    const el = document.getElementById(id);
-    if (el && !el.value.trim()) {
-      el.style.borderColor = '#d4857a';
-      el.style.boxShadow = '0 0 0 3px rgba(212,133,122,0.2)';
-      setTimeout(() => { el.style.borderColor = ''; el.style.boxShadow = ''; }, 2500);
-    }
-  }
-
-  function submitForm() {
-    const name = document.getElementById('fname').value.trim();
-    const phone = document.getElementById('fphone').value.trim();
-    const service = document.getElementById('fservice').value;
-    const date = document.getElementById('fdate').value;
-    if (!name || !phone || !service || !date) {
-      ['fname','fphone','fservice','fdate'].forEach(highlightField);
-      return;
-    }
-    document.getElementById('formFields').style.display = 'none';
-    document.getElementById('formSuccess').classList.add('show');
-  }
-
-  function resetForm() {
-    ['fname','fphone','femail','fnotes'].forEach(id => { const el = document.getElementById(id); if(el) el.value=''; });
-    ['fservice','fstylist'].forEach(id => { const el = document.getElementById(id); if(el) el.selectedIndex=0; });
-    document.getElementById('fdate').value = '';
-    document.querySelectorAll('.time-slot').forEach(s => s.classList.remove('active'));
-    document.getElementById('formFields').style.display = 'grid';
-    document.getElementById('formSuccess').classList.remove('show');
-  }
 </script>
 </body>
 </html>
